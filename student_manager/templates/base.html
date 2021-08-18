@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student details Form</title>
+</head>
+<body>
+    <h2>Enter Student Details</h2>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Send Mail">
+    </form>
+</body>
+</html>
